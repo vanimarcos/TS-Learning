@@ -149,7 +149,13 @@ console.log(factorial(10));
 
 
 
+// Typescript also have generics 
 
+function identity<Type>(arg: Type): Type {
+    return arg;
+}
+
+let output = identity<string>("myString");
 
 
 
